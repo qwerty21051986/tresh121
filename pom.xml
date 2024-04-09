@@ -109,7 +109,7 @@
                         </manifest>
                         <manifestEntries>
                                 <Class-Path>lib/</Class-Path>
-                                <Main-Class>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</Main-Class>
+                                <Main-Class>org.eclipse.jdt.internal.jar-in-jar-loader.JarRsrcLoader</Main-Class>
                                 <Rsrc-Main-Class>com.javarush.games.racer.RacerGame</Rsrc-Main-Class>
                         </manifestEntries>
                     </archive>
