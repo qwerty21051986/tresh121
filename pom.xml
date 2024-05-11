@@ -51,6 +51,7 @@
             </resource>
         </resources>
         <plugins>
+
             <!-- Usual compilation -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -83,7 +84,7 @@
                             <goal>copy-dependencies</goal>
                         </goals>
                         <configuration>
-                            <excludeScope>compile</excludeScope>
+                            <includeScope>compile</includeScope>
                         </configuration>
                     </execution>
                 </executions>
@@ -116,9 +117,6 @@
                     <excludes>
                         <exclude>StrangeTest</exclude>
                     </excludes>
-                    <!--                    <includes>-->
-                    <!--                        <include>DataCheck.java</include>-->
-                    <!--                    </includes>-->
                 </configuration>
             </plugin>
 
