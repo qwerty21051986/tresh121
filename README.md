@@ -20,7 +20,7 @@
 
 + Build the project
 
-  + run `mvn install:install-file -Dfile=.\project-maven\lib\desktop-game-engine.jar -DgroupId="com.javarush" -DartifactId="desktop-game-engine" -Dversion="1.0" -Dpackaging=jar` to add the local artifact to a local repository
+  + run `mvn install:install-file -Dfile=".\project-maven\lib\desktop-game-engine.jar" -DgroupId="com.javarush" -DartifactId="desktop-game-engine" -Dversion="1.0" -Dpackaging=jar` to add the local artifact to a local repository
 
   + run `gradle clean build` to create the artifact
 
