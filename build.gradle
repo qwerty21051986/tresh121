@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'maven-publish'
 }
 
 group = 'jru.module3'
@@ -37,6 +38,7 @@ task copyDependencies(type: Copy) {
     from configurations.runtimeClasspath
     into "$buildDir/dependencies"
 }
+
 
 jar {
     manifest {
