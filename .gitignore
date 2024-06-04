@@ -19,3 +19,6 @@ target/
 .repository/
 *.iml
 *.iws
+/build/libs/project-maven-1.0.jar
+/lib/javafx-graphics-18.0.1-win.jar
+/lib/
