@@ -72,7 +72,7 @@
                         <goals>
                             <goal>copy-dependencies</goal>
                         </goals>
-                        <configuration><!-- Копировать только зависимости со scope compile -->
+                        <configuration>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
                             <includeScope>compile</includeScope>
                         </configuration>
@@ -85,7 +85,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
-                <configuration> <!-- Настройка манифеста JAR файла -->
+                <configuration>
                     <archive>
                         <manifest>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
@@ -112,7 +112,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.3.1</version> <!-- Укажите последнюю доступную версию -->
+                <version>3.3.1</version>
                 <configuration>
                     <!-- Исключение теста StrangeTest -->
                     <excludes>
